@@ -7,8 +7,8 @@ public class Cat
     private double minWeight;
     private double maxWeight;
 
-    private double amountDrink;
-    private double amountFeed;
+    private double weightFood;
+    private double amountFood;
 
     public Cat()
     {
@@ -16,8 +16,7 @@ public class Cat
         originWeight = weight;
         minWeight = 1000.0;
         maxWeight = 9000.0;
-        amountDrink = 5;
-        amountFeed = 10;
+        amountFood = weightFood;
     }
 
     public void meow()
@@ -28,13 +27,25 @@ public class Cat
 
     public void feed()
     {
-        weight = weight + amountFeed;
+        weight = weight + amountFood;
         System.out.println("Feed");
     }
 
-    public void drink()
+    public void amountFood()
     {
-        weight = weight + amountDrink;
+        amountFood = weightFood + 150; // вес еды в граммах
+        System.out.println("Amount of food:" + amountFood);
+    }
+
+    public void pee()
+    {
+        weight = weight - amountFood;
+        System.out.println("Pee");
+    }
+
+    public void drink(Double amount)
+    {
+        weight = weight + amount;
         System.out.println("Drink");
     }
 
@@ -58,4 +69,5 @@ public class Cat
             return "Playing";
         }
     }
+
 }
