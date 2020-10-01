@@ -3,9 +3,9 @@ public class Loader
 {
     public static void main(String[] args)
     {
-        System.out.println("Amount cats:" + Cat.getCount());
+/*        System.out.println("Amount cats:" + Cat.getCount());
         System.out.println("Add cats: ...");
-
+ */
         Cat murka = new Cat();
         System.out.println("Murka weight:" + murka.getWeight());
 /*
@@ -70,7 +70,7 @@ public class Loader
         System.out.println("Murka weight:" + murka.getWeight());
         System.out.println("Murka status:" + murka.getStatus());
 */
-        System.out.println("Amount cats:" + Cat.getCount());
+/*        System.out.println("Amount cats:" + Cat.getCount());
 
         murka.feed(10000.0);
 
@@ -82,5 +82,9 @@ public class Loader
         murka.feed(1.0);
 
         System.out.println("Amount alive cats:" + Cat.getCount());
+ */
+        System.out.println(Cat.LEGS_COUNT);
+        Cat cat = new Cat();
+        cat.setCatColor(CatColor.BLACK_CAT);
     }
 }

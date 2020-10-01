@@ -8,11 +8,13 @@ public class Cat
     private double maxWeight;
 
     private double amountFood;
-
     private static int count;
+    public static final int LEGS_COUNT = 4;
+    public static final int EYES_COUNT = 2;
+    public static final double MIN_WEIGHT = 1000.0;
+    public static final double MAX_WEIGHT = 9000.0;
 
-    public Cat()
-    {
+    public Cat() {
         weight = 1500.0 + 3000.0 * Math.random();
         originWeight = weight;
         minWeight = 1000.0;
@@ -21,19 +23,20 @@ public class Cat
         count ++;
     }
 
-    public static int getCount()
-    {
+    public void setCatColor (CatColor color) {
+
+    }
+
+    public static int getCount() {
         return count;
     }
 
-    public void meow()
-    {
+    public void meow() {
         weight = weight - 1;
         System.out.println("Meow");
     }
 
-    public void feed(Double amount)
-    {
+    public void feed(Double amount) {
         if (!getStatus().equals("Dead") && !getStatus().equals("Exploded")) {
             this.amountFood = amount;
             weight += amountFood;
@@ -43,38 +46,30 @@ public class Cat
         }
         else
             System.out.println("Feed. U can't feed this cat more!");
-
     }
 
-    public void pee()
-    {
+    public void pee() {
         weight = weight - amountFood;
         System.out.println("Pee");
     }
 
-    public void drink(Double amount)
-    {
+    public void drink(Double amount) {
         weight = weight + amount;
         System.out.println("Drink");
     }
 
-    public Double getWeight()
-    {
+    public Double getWeight() {
         return weight;
     }
 
-    public String getStatus()
-    {
-        if(weight < minWeight)
-        {
+    public String getStatus() {
+        if(weight < minWeight) {
             return "Dead";
         }
-        else if(weight > maxWeight)
-        {
+        else if(weight > maxWeight) {
             return "Exploded";
         }
-        else if(weight > originWeight)
-        {
+        else if(weight > originWeight) {
             return "Sleeping";
         }
         else {
