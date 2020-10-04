@@ -1,3 +1,4 @@
+import java.awt.Color;
 
 public class Loader
 {
@@ -6,8 +7,8 @@ public class Loader
 /*        System.out.println("Amount cats:" + Cat.getCount());
         System.out.println("Add cats: ...");
  */
-        Cat murka = new Cat();
-        System.out.println("Murka weight:" + murka.getWeight());
+        Cat murka = new Cat(1000.0);
+        System.out.println(murka.getWeight());
 /*
         while (murka.getStatus() != "Exploded")
         {
@@ -18,8 +19,9 @@ public class Loader
             System.out.println();
         }
 */
-        Cat vasya = new Cat();
+/*        Cat vasya = new Cat();
         System.out.println("Vasya weight:" + vasya.getWeight());
+ */
 /*
         while (vasya.getStatus() != "Dead")
         {
@@ -30,24 +32,27 @@ public class Loader
             System.out.println();
         }
 */
-        Cat barsik = new Cat();
+/*        Cat barsik = new Cat();
         System.out.println("Barsik weight:" + barsik.getWeight());
+ */
 /*
         barsik.feed(150.0);
 
         System.out.println("Barsik weight:" + barsik.getWeight());
         System.out.println();
 */
-        Cat sonya = new Cat();
+/*        Cat sonya = new Cat();
         System.out.println("Sonya weight:" + sonya.getWeight());
+ */
 /*
         sonya.feed(100.0);
 
         System.out.println("Sonya weight:" + sonya.getWeight());
         System.out.println();
 */
-        Cat tom = new Cat();
+/*        Cat tom = new Cat();
         System.out.println("Tom weight:" + tom.getWeight());
+ */
 /*
         tom.feed(tom.getWeight());
 
@@ -83,8 +88,16 @@ public class Loader
 
         System.out.println("Amount alive cats:" + Cat.getCount());
  */
-        System.out.println(Cat.LEGS_COUNT);
-        Cat cat = new Cat();
-        cat.setCatColor(CatColor.BLACK_CAT);
+        Cat pushok = getKitten();
+        System.out.println("Weight pushok: " + pushok.getWeight());
+
+        Cat snejok = getKitten();
+        System.out.println("Weight snejok: " + snejok.getWeight());
+
+        Cat kolobok = getKitten();
+        System.out.println("Weight kolobok: " + kolobok.getWeight());
+    }
+        private static Cat getKitten() {
+        return new Cat(1100.0);
     }
 }

@@ -9,10 +9,13 @@ public class Cat
 
     private double amountFood;
     private static int count;
+    private String name;
+
     public static final int LEGS_COUNT = 4;
     public static final int EYES_COUNT = 2;
     public static final double MIN_WEIGHT = 1000.0;
     public static final double MAX_WEIGHT = 9000.0;
+
 
     public Cat() {
         weight = 1500.0 + 3000.0 * Math.random();
@@ -23,8 +26,20 @@ public class Cat
         count ++;
     }
 
-    public void setCatColor (CatColor color) {
+    public Cat (Double weight) {
+        this.weight = weight;
+    }
 
+    public Cat(String name) {
+        this();
+        this.name = name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getName() {
+        return name;
     }
 
     public static int getCount() {
