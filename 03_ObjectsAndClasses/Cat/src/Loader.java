@@ -1,4 +1,3 @@
-import java.awt.Color;
 
 public class Loader
 {
@@ -7,8 +6,13 @@ public class Loader
 /*        System.out.println("Amount cats:" + Cat.getCount());
         System.out.println("Add cats: ...");
  */
-        Cat murka = new Cat(1000.0);
-        System.out.println(murka.getWeight());
+        //Cat murka = new Cat(1000.0);
+        //Cat murka = new Cat("Murka");
+        Cat murka = new Cat (Color.RED);
+
+        //System.out.println(murka.getWeight());
+        //System.out.println(murka.getName());
+        System.out.println("Murka's color: " + murka.getColor());
 /*
         while (murka.getStatus() != "Exploded")
         {
@@ -88,6 +92,7 @@ public class Loader
 
         System.out.println("Amount alive cats:" + Cat.getCount());
  */
+/*
         Cat pushok = getKitten();
         System.out.println("Weight pushok: " + pushok.getWeight());
 
@@ -96,8 +101,11 @@ public class Loader
 
         Cat kolobok = getKitten();
         System.out.println("Weight kolobok: " + kolobok.getWeight());
+*/
     }
+/*
         private static Cat getKitten() {
         return new Cat(1100.0);
     }
+*/
 }

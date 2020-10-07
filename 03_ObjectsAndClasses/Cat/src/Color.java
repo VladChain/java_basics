@@ -1,8 +1,8 @@
 public enum Color {
     BLACK_CAT,
-    WHITE_CAT,
-    GRAY_CAT,
-    RED_CAT,
-    STRIPED_CAT,
-    SPOTTED_CAT
+    WHITE,
+    GRAY,
+    RED,
+    STRIPED,
+    SPOTTED
 }
