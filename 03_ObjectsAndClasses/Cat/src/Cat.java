@@ -56,7 +56,6 @@ public class Cat
         setColor(cat.getColor());
     }
 
-
     public void setName(String name)
     {
         this.name = name;
