@@ -23,7 +23,8 @@ public class Loader
             System.out.println();
         }
 */
-/*        Cat vasya = new Cat();
+/*
+        Cat vasya = new Cat();
         System.out.println("Vasya weight:" + vasya.getWeight());
  */
 /*
@@ -36,7 +37,8 @@ public class Loader
             System.out.println();
         }
 */
-/*        Cat barsik = new Cat();
+/*
+        Cat barsik = new Cat();
         System.out.println("Barsik weight:" + barsik.getWeight());
  */
 /*
@@ -45,7 +47,8 @@ public class Loader
         System.out.println("Barsik weight:" + barsik.getWeight());
         System.out.println();
 */
-/*        Cat sonya = new Cat();
+/*
+        Cat sonya = new Cat();
         System.out.println("Sonya weight:" + sonya.getWeight());
  */
 /*
@@ -54,7 +57,8 @@ public class Loader
         System.out.println("Sonya weight:" + sonya.getWeight());
         System.out.println();
 */
-/*        Cat tom = new Cat();
+/*
+        Cat tom = new Cat();
         System.out.println("Tom weight:" + tom.getWeight());
  */
 /*
@@ -79,7 +83,8 @@ public class Loader
         System.out.println("Murka weight:" + murka.getWeight());
         System.out.println("Murka status:" + murka.getStatus());
 */
-/*        System.out.println("Amount cats:" + Cat.getCount());
+/*
+        System.out.println("Amount cats:" + Cat.getCount());
 
         murka.feed(10000.0);
 
@@ -102,9 +107,19 @@ public class Loader
         Cat kolobok = getKitten();
         System.out.println("Weight kolobok: " + kolobok.getWeight());
 */
+        Cat rokki = new Cat(1500.0, "Rokki", Color.STRIPED);
+
+        Cat atos = new Cat(rokki);
+        System.out.println("Cat Atos: "+atos.getWeight()+", "+atos.getName()+", "+atos.getColor());
+
+        Cat casper = new Cat();
+        casper.Copy(rokki);
+        System.out.println("Cat Casper: "+casper.getWeight()+", "+casper.getName()+", "+casper.getColor());
+        System.out.println("Yeah, dude! Good job! Well done! Thanks God & my teacher Ruslan!))");
     }
 /*
-        private static Cat getKitten() {
+        private static Cat getKitten()
+        {
         return new Cat(1100.0);
     }
 */

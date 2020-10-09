@@ -17,7 +17,8 @@ public class Cat
     public static final double MIN_WEIGHT = 1000.0;
     public static final double MAX_WEIGHT = 9000.0;
 
-    public Cat() {
+    public Cat()
+    {
         weight = 1500.0 + 3000.0 * Math.random();
         originWeight = weight;
         minWeight = 1000.0;
@@ -26,47 +27,71 @@ public class Cat
         count ++;
     }
 
-    public Cat(Double weight) {
+    public Cat(Double weight)
+    {
         this.weight = weight;
     }
 
-    public Cat(String name) {
+    public Cat(String name)
+    {
         this();
         this.name = name;
     }
 
-    public Cat(Color color) {
+    public Cat(Color color)
+    {
         this();
         this.color = color;
     }
 
-    public void setName(String name) {
+    public Cat(Cat cat)
+    {
+        this(cat.getWeight(), cat.getName(), cat.getColor());
+    }
+
+    public void Copy(Cat cat)
+    {
+        setWeight(cat.getWeight());
+        setName(cat.getName());
+        setColor(cat.getColor());
+    }
+
+
+    public void setName(String name)
+    {
         this.name = name;
     }
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
-    public void setColor(Color color) {
+    public void setColor(Color color)
+    {
         this.color = color;
     }
 
-    public Color getColor() {
+    public Color getColor()
+    {
         return color;
     }
 
-    public static int getCount() {
+    public static int getCount()
+    {
         return count;
     }
 
-    public void meow() {
+    public void meow()
+    {
         weight = weight - 1;
         System.out.println("Meow");
     }
 
-    public void feed(Double amount) {
-        if (!getStatus().equals("Dead") && !getStatus().equals("Exploded")) {
+    public void feed(Double amount)
+    {
+        if (!getStatus().equals("Dead") && !getStatus().equals("Exploded"))
+        {
             this.amountFood = amount;
             weight += amountFood;
             System.out.println("Feed");
@@ -77,28 +102,40 @@ public class Cat
             System.out.println("Feed. U can't feed this cat more!");
     }
 
-    public void pee() {
+    public void pee()
+    {
         weight = weight - amountFood;
         System.out.println("Pee");
     }
 
-    public void drink(Double amount) {
+    public void drink(Double amount)
+    {
         weight = weight + amount;
         System.out.println("Drink");
     }
 
-    public Double getWeight() {
+    public void setWeight(Double weight)
+    {
+        this.weight = weight;
+    }
+
+    public Double getWeight()
+    {
         return weight;
     }
 
-    public String getStatus() {
-        if(weight < minWeight) {
+    public String getStatus()
+    {
+        if(weight < minWeight)
+        {
             return "Dead";
         }
-        else if(weight > maxWeight) {
+        else if(weight > maxWeight)
+        {
             return "Exploded";
         }
-        else if(weight > originWeight) {
+        else if(weight > originWeight)
+        {
             return "Sleeping";
         }
         else {
