@@ -27,6 +27,13 @@ public class Cat
         count ++;
     }
 
+    public Cat(double weight, String name, Color color)
+    {
+        this.weight = weight;
+        this.name = name;
+        this.color = color;
+    }
+
     public Cat(Double weight)
     {
         this.weight = weight;
@@ -55,6 +62,7 @@ public class Cat
         setName(cat.getName());
         setColor(cat.getColor());
     }
+
 
     public void setName(String name)
     {
