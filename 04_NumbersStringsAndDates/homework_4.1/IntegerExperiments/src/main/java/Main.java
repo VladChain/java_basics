@@ -19,14 +19,16 @@ public class Main {
   В противном случае тестовый метод не сможет проверить ваш код
    */
 
-  public static Integer sumDigits(Integer number)
+  // Домашняя работа 4.1
+  public static Integer sumDigits(Integer number) // Задание 2 изменение int в Integer
   {
     if (number == null)
     return -1;
 
     int sum = 0;
     for (int i = 0; i < number.toString().length(); i++)
-        sum += Integer.parseInt(String.valueOf(number.toString().charAt(i)));
+//        sum += Integer.parseInt(String.valueOf(number.toString().charAt(i)));
+        sum += Character.getNumericValue(number.toString().charAt(i)); // Доп. задание Домашняя работа 4.1
     return sum;
   }
 }
