@@ -1,11 +1,46 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main
+{
+    public static void main(String[] args)
+    {
+//        Scanner scanner = new Scanner(System.in);
+//        String box = scanner.nextLine();
+//        System.out.println("Введите количество ящиков: ");
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String boxes = scanner.nextLine();
+        int box = new Scanner(System.in).nextInt();
 
+        int truck = 0;
+        int container = 0;
+
+        if (box > 0)
+        {
+            truck++;
+            container++;
+
+            System.out.println("Грузовик: " + truck + "\r\n\tКонтейнер: " + container);
+
+            for (int i = 1; i <= box; i++)
+            {
+                System.out.println("\t\tЯщик: " + i);
+                if (i % 27 == 0)
+                {
+                    if (container % 12 == 0)
+                    {
+                        truck++;
+                        System.out.println("Грузовик: " + truck);
+                    }
+
+                    if (i + 1 <= box)
+                    {
+                        container++;
+                        System.out.println("\tКонтейнер: " + container);
+                    }
+                }
+            }
+        }
+        System.out.println("Необходимо:\r\nгрузовиков - " + truck + " шт." +
+                "\r\nконтейнеров - " + container + " шт.");
         // TODO: вывести в консоль коробки разложенные по грузовикам и контейнерам
         // пример вывода при вводе 2
         // для отступа используйте табуляцию - \t
@@ -20,5 +55,5 @@ public class Main {
         контейнеров - 1 шт.
         */
     }
-
 }
+
