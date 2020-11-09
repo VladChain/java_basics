@@ -6,8 +6,11 @@
         <option value="$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.3/GeometryCalculator/pom.xml" />
         <option value="$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.1/IntegerExperiments/pom.xml" />
         <option value="$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.3/TrucksContainersAndBoxes/pom.xml" />
+        <option value="$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.4/TotalEarningsCalculator/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
 </project>

@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.1/IntegerExperiments/01_sumdigits.iml" filepath="$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.1/IntegerExperiments/01_sumdigits.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.4/CodeEnglishLetters/CodeEnglishLetters.iml" filepath="$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.4/CodeEnglishLetters/CodeEnglishLetters.iml" />
       <module fileurl="file://$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.3/GeometryCalculator/GeometryCalculator.iml" filepath="$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.3/GeometryCalculator/GeometryCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.2/Numbers/Numbers.iml" filepath="$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.2/Numbers/Numbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.4/TotalEarningsCalculator/TotalEarningsCalculator.iml" filepath="$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.4/TotalEarningsCalculator/TotalEarningsCalculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.3/TrucksContainersAndBoxes/TrucksContainersAndBoxes.iml" filepath="$PROJECT_DIR$/04_NumbersStringsAndDates/homework_4.3/TrucksContainersAndBoxes/TrucksContainersAndBoxes.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java_basics.iml" filepath="$PROJECT_DIR$/.idea/java_basics.iml" />
     </modules>

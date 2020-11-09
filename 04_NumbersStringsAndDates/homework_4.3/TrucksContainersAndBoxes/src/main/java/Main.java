@@ -4,11 +4,11 @@ public class Main
 {
     public static void main(String[] args)
     {
-//        Scanner scanner = new Scanner(System.in);
-//        String box = scanner.nextLine();
-//        System.out.println("Введите количество ящиков: ");
+        Scanner scanner = new Scanner(System.in);
+        int box = Integer.parseInt(scanner.nextLine());
 
-        int box = new Scanner(System.in).nextInt();
+//        System.out.println("Введите количество ящиков: ");
+//        int box = new Scanner(System.in).nextInt(); // 2-й вариант
 
         int truck = 0;
         int container = 0;
