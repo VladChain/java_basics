@@ -16,7 +16,6 @@ public class Main {
             if (wage > 47 && wage < 58) {
                 total.append(wage);
                 if (text.charAt(i + 1) == ' ') {
-                    System.out.println(text.charAt(i + 1));
                    sum [++k] = Integer.parseInt(total.toString());
                     total = new StringBuffer();
                 }
