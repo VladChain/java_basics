@@ -20,4 +20,14 @@ public class BankAccount {
             amount -= amountToTake;
         }
     }
+
+    public boolean send(BankAccount receiver, double amount) {
+        if (this.amount >= amount) {
+            receiver.amount += amount;
+            this.amount -= amount;
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
