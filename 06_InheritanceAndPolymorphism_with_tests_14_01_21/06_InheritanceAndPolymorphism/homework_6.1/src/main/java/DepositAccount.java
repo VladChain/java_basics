@@ -1,9 +1,14 @@
 import java.time.LocalDate;
 
-public class DepositAccount extends BankAccount {
+class DepositAccount extends BankAccount {
     private LocalDate lastIncome;
+    private double amount;
 
-    public void put(double amountToPut) {
+    protected double getAmount() {
+        return amount;
+    }
+
+    protected void put(double amountToPut) {
         if (amountToPut < 0) {
             System.out.println("Invalid request!");
         } else {
@@ -12,8 +17,8 @@ public class DepositAccount extends BankAccount {
         }
     }
 
-    public void take(double amountToTake) {
-        if (LocalDate.now().compareTo(lastIncome) > 0 && amount > amountToTake) {
+    protected void take(double amountToTake) {
+        if (LocalDate.now().compareTo(lastIncome) > 0 && getAmount() > amountToTake) {
             amount -= amountToTake;
         }
     }

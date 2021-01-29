@@ -1,11 +1,11 @@
-public class BankAccount {
-    public double amount;
+class BankAccount {
+    private double amount;
 
-    public double getAmount() {
+    protected double getAmount() {
         return amount;
     }
 
-    public void put(double amountToPut) {
+    protected void put(double amountToPut) {
         if (amountToPut < 0) {
             System.out.println("Invalid request!");
         } else {
@@ -13,7 +13,7 @@ public class BankAccount {
         }
     }
 
-    public void take(double amountToTake) {
+    protected void take(double amountToTake) {
         if (amount < amountToTake) {
             System.out.println("Insufficient funds!");
         } else {
@@ -21,7 +21,7 @@ public class BankAccount {
         }
     }
 
-    public boolean send(BankAccount receiver, double amount) {
+    protected boolean send(BankAccount receiver, double amount) {
         if (this.amount >= amount) {
             receiver.amount += amount;
             this.amount -= amount;
