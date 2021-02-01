@@ -24,6 +24,7 @@
         <module name="BirthdayCalendar" />
         <module name="TwoDimensionalArray" />
         <module name="GeometryCalculator" />
+        <module name="Inheritance3" />
         <module name="Hospital" />
         <module name="TodoList" />
       </profile>
@@ -38,6 +39,7 @@
       <module name="GeometryCalculator" target="11" />
       <module name="Hospital" target="11" />
       <module name="Inheritance1" target="11" />
+      <module name="Inheritance3" target="11" />
       <module name="MaskingInformation" target="11" />
       <module name="MaskingInformationReqExp" target="11" />
       <module name="PhoneBook" target="11" />
