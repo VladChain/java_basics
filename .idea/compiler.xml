@@ -27,6 +27,7 @@
         <module name="Inheritance3" />
         <module name="Hospital" />
         <module name="TodoList" />
+        <module name="LambdaExpressions7.1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -40,6 +41,7 @@
       <module name="Hospital" target="11" />
       <module name="Inheritance1" target="11" />
       <module name="Inheritance3" target="11" />
+      <module name="LambdaExpressions7.1" target="11" />
       <module name="MaskingInformation" target="11" />
       <module name="MaskingInformationReqExp" target="11" />
       <module name="PhoneBook" target="11" />
