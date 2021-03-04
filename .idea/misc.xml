@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="org.junit.jupiter.api.DisplayName" />
+    </list>
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -29,6 +34,7 @@
         <option value="$PROJECT_DIR$/07_AdvancedOOPFeatures_with_tests_29_01_21/07_AdvancedOOPFeatures/homework_7.2/Employees/pom.xml" />
         <option value="$PROJECT_DIR$/07_AdvancedOOPFeatures_with_tests_29_01_21/07_AdvancedOOPFeatures/homework_7.2/Airport/pom.xml" />
         <option value="$PROJECT_DIR$/08_ExceptionsDebuggingAndTesting_with_tests_20_12_2020/08_ExceptionsDebuggingAndTesting/homework_8.1/ConsoleCustomerList/pom.xml" />
+        <option value="$PROJECT_DIR$/08_ExceptionsDebuggingAndTesting_with_tests_20_12_2020/08_ExceptionsDebuggingAndTesting/homework_8.2/SPBMetro/pom.xml" />
       </list>
     </option>
   </component>
