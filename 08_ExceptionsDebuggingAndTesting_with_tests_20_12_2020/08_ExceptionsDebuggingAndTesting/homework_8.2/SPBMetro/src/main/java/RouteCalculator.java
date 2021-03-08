@@ -14,20 +14,20 @@ public class RouteCalculator {
     public List<Station> getShortestRoute(Station from, Station to) {
         List<Station> route = getRouteOnTheLine(from, to);
         if (route != null) {
-            System.out.println("DIRECT ROUTE");
+            System.out.println("Прямой маршрут");
             return route;
         }
 
         if (stationIndex.connections.size() == 1) {
             route = getRouteWithOneConnection(from, to);
             if (route != null) {
-                System.out.println("ROUTE WITH ONE CONNECTION");
+                System.out.println("Маршрут с одной пересадкой");
                 return route;
             }
         }
 
         route = getRouteWithTwoConnections(from, to);
-        System.out.println("ROUTE WITH SOME CONNECTIONS");
+        System.out.println("Маршрут с двумя пересадками");
         return route;
     }
 
