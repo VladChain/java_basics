@@ -24,6 +24,7 @@
         <module name="LambdaExpressions7.1" />
         <module name="LambdaExpressions7.2-Employee" />
         <module name="ReverseArray" />
+        <module name="folder-copy" />
         <module name="EmailList" />
         <module name="spb-metro" />
         <module name="TotalEarningsCalculator" />
@@ -41,6 +42,7 @@
       <module name="ConsoleCustomerList" target="11" />
       <module name="CoolNumber" target="11" />
       <module name="EmailList" target="11" />
+      <module name="folder-copy" target="11" />
       <module name="folder-size" target="11" />
       <module name="FullNameFormatter" target="11" />
       <module name="FullNameFormatterRegExp" target="11" />
