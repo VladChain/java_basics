@@ -35,6 +35,7 @@
         <module name="TwoDimensionalArray" />
         <module name="Inheritance3" />
         <module name="TodoList" />
+        <module name="images-copy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -49,6 +50,7 @@
       <module name="FullNameFormatterRegExp" target="11" />
       <module name="GeometryCalculator" target="11" />
       <module name="Hospital" target="11" />
+      <module name="images-copy" target="15" />
       <module name="Inheritance1" target="11" />
       <module name="Inheritance3" target="11" />
       <module name="LambdaExpressions7.1" target="11" />
