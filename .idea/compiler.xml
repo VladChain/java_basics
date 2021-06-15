@@ -2,15 +2,19 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="PhoneBook" />
+        <module name="image-resizer" />
         <module name="PhoneCleaner" />
         <module name="TotalEarningsCalculatorReqExp" />
         <module name="ConsoleCustomerList" />
+        <module name="average-number-of-purchases" />
         <module name="MaskingInformationReqExp" />
+        <module name="jdbc" />
         <module name="SplitText" />
         <module name="read-movements-csv" />
         <module name="LambdaExpressions7.2-Airport" />
@@ -22,12 +26,15 @@
         <module name="folder-size" />
         <module name="GeometryCalculator" />
         <module name="Hospital" />
+        <module name="MSCMetro" />
         <module name="LambdaExpressions7.1" />
+        <module name="library-hibernate" />
         <module name="LambdaExpressions7.2-Employee" />
         <module name="ReverseArray" />
         <module name="folder-copy" />
         <module name="EmailList" />
         <module name="spb-metro" />
+        <module name="transactions" />
         <module name="TotalEarningsCalculator" />
         <module name="FullNameFormatterRegExp" />
         <module name="Inheritance1" />
@@ -36,10 +43,12 @@
         <module name="Inheritance3" />
         <module name="TodoList" />
         <module name="images-copy" />
+        <module name="new-table" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="01_sumdigits" target="11" />
+      <module name="average-number-of-purchases" target="15" />
       <module name="BirthdayCalendar" target="11" />
       <module name="ConsoleCustomerList" target="11" />
       <module name="CoolNumber" target="11" />
@@ -50,14 +59,19 @@
       <module name="FullNameFormatterRegExp" target="11" />
       <module name="GeometryCalculator" target="11" />
       <module name="Hospital" target="11" />
+      <module name="image-resizer" target="15" />
       <module name="images-copy" target="15" />
       <module name="Inheritance1" target="11" />
       <module name="Inheritance3" target="11" />
+      <module name="jdbc" target="15" />
       <module name="LambdaExpressions7.1" target="11" />
       <module name="LambdaExpressions7.2-Airport" target="11" />
       <module name="LambdaExpressions7.2-Employee" target="11" />
+      <module name="library-hibernate" target="15" />
       <module name="MaskingInformation" target="11" />
       <module name="MaskingInformationReqExp" target="11" />
+      <module name="MSCMetro" target="15" />
+      <module name="new-table" target="15" />
       <module name="PhoneBook" target="11" />
       <module name="PhoneCleaner" target="11" />
       <module name="read-movements-csv" target="11" />
@@ -67,6 +81,7 @@
       <module name="TodoList" target="11" />
       <module name="TotalEarningsCalculator" target="11" />
       <module name="TotalEarningsCalculatorReqExp" target="11" />
+      <module name="transactions" target="15" />
       <module name="TrucksContainersAndBoxes" target="11" />
       <module name="TwoDimensionalArray" target="11" />
     </bytecodeTargetLevel>
