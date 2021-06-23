@@ -10,6 +10,7 @@
         <module name="PhoneBook" />
         <module name="image-resizer" />
         <module name="PhoneCleaner" />
+        <module name="ToDoList" />
         <module name="TotalEarningsCalculatorReqExp" />
         <module name="ConsoleCustomerList" />
         <module name="average-number-of-purchases" />
@@ -81,6 +82,7 @@
       <module name="sitemap" target="15" />
       <module name="spb-metro" target="11" />
       <module name="SplitText" target="11" />
+      <module name="ToDoList" target="15" />
       <module name="TodoList" target="11" />
       <module name="TotalEarningsCalculator" target="11" />
       <module name="TotalEarningsCalculatorReqExp" target="11" />
