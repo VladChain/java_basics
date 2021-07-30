@@ -10,7 +10,6 @@
         <module name="PhoneBook" />
         <module name="image-resizer" />
         <module name="PhoneCleaner" />
-        <module name="ToDoList" />
         <module name="TotalEarningsCalculatorReqExp" />
         <module name="ConsoleCustomerList" />
         <module name="average-number-of-purchases" />
@@ -27,6 +26,7 @@
         <module name="folder-size" />
         <module name="GeometryCalculator" />
         <module name="Hospital" />
+        <module name="ToDoList (2)" />
         <module name="MSCMetro" />
         <module name="sitemap" />
         <module name="LambdaExpressions7.1" />
@@ -43,6 +43,7 @@
         <module name="CoolNumber" />
         <module name="TwoDimensionalArray" />
         <module name="Inheritance3" />
+        <module name="ToDoList (1)" />
         <module name="TodoList" />
         <module name="images-copy" />
         <module name="new-table" />
@@ -82,8 +83,9 @@
       <module name="sitemap" target="15" />
       <module name="spb-metro" target="11" />
       <module name="SplitText" target="11" />
-      <module name="ToDoList" target="15" />
       <module name="TodoList" target="11" />
+      <module name="ToDoList (1)" target="15" />
+      <module name="ToDoList (2)" target="15" />
       <module name="TotalEarningsCalculator" target="11" />
       <module name="TotalEarningsCalculatorReqExp" target="11" />
       <module name="transactions" target="15" />
