@@ -43,6 +43,7 @@
         <module name="CoolNumber" />
         <module name="TwoDimensionalArray" />
         <module name="Inheritance3" />
+        <module name="ToDoList (3)" />
         <module name="ToDoList (1)" />
         <module name="TodoList" />
         <module name="images-copy" />
@@ -86,6 +87,7 @@
       <module name="TodoList" target="11" />
       <module name="ToDoList (1)" target="15" />
       <module name="ToDoList (2)" target="15" />
+      <module name="ToDoList (3)" target="15" />
       <module name="TotalEarningsCalculator" target="11" />
       <module name="TotalEarningsCalculatorReqExp" target="11" />
       <module name="transactions" target="15" />
