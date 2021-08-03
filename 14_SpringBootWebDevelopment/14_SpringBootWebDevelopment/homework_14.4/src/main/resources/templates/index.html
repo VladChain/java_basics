@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+</head>
+<body>
+    <div id="deal-form">
+        <form>
+            <h2>Добавление дела</h2>
+            <label>Название дела:</label>
+            <input type="text" name="name" value="">
+            <hr>
+            <button id="save-deal">Сохранить</button>
+        </form>
+    </div>
+    <h1>Блокнот (<span th:text="${dealsCount}">0</span>)</h1>
+    <button id="show-add-deal-form">Добавить дело</button>
+    <br><br>
+    <div id="deal-list">
+        <div th:each="deal : ${deals}">
+            <a href="#" class="deal-link" th:attr="data-id=${deal.id}" th:text="${deal.name}"></a>
+        </div>
+    </div>
+</body>
+</html>
