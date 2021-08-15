@@ -39,6 +39,7 @@
         <module name="spb-metro" />
         <module name="transactions" />
         <module name="TotalEarningsCalculator" />
+        <module name="UsersInRedis" />
         <module name="FullNameFormatterRegExp" />
         <module name="Inheritance1" />
         <module name="CoolNumber" />
@@ -95,6 +96,7 @@
       <module name="transactions" target="15" />
       <module name="TrucksContainersAndBoxes" target="11" />
       <module name="TwoDimensionalArray" target="11" />
+      <module name="UsersInRedis" target="15" />
     </bytecodeTargetLevel>
   </component>
 </project>
