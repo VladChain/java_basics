@@ -36,6 +36,7 @@
         <module name="LambdaExpressions7.2-Employee" />
         <module name="ReverseArray" />
         <module name="folder-copy" />
+        <module name="Goods" />
         <module name="EmailList" />
         <module name="spb-metro" />
         <module name="transactions" />
@@ -66,6 +67,7 @@
       <module name="FullNameFormatter" target="11" />
       <module name="FullNameFormatterRegExp" target="11" />
       <module name="GeometryCalculator" target="11" />
+      <module name="Goods" target="15" />
       <module name="Hospital" target="11" />
       <module name="image-resizer" target="15" />
       <module name="images-copy" target="15" />
