@@ -6,13 +6,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 
-public class XMLHandler extends DefaultHandler {
+public class XMLHandlers extends DefaultHandler {
 
-    private Voter voter;
+    private Voters voter;
     private static SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
-    private HashMap<Voter, Integer> voterCounts;
+    private HashMap<Voters, Integer> voterCounts;
 
-    public XMLHandler() {
+    public XMLHandlers() {
         voterCounts = new HashMap<>();
     }
 
@@ -22,7 +22,7 @@ public class XMLHandler extends DefaultHandler {
 
             if (qName.equals("voter") && voter == null) {
                 Date birthDay = birthDayFormat.parse(attributes.getValue("birthDay"));
-                voter = new Voter(attributes.getValue("name"), birthDay);
+                voter = new Voters(attributes.getValue("name"), birthDay);
             }
             else if (qName.equals("visit") && voter != null) {
                 int count = voterCounts.getOrDefault(voter, 0);
@@ -42,7 +42,7 @@ public class XMLHandler extends DefaultHandler {
 
     public void printDuplicatedVoters() {
         System.out.println("Duplicated voters: ");
-        for (Voter voter : voterCounts.keySet() ) {
+        for (Voters voter : voterCounts.keySet() ) {
 
             int count = voterCounts.get(voter);
             if (count > 1) {

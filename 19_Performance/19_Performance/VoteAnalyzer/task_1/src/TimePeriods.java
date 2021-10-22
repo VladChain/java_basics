@@ -2,7 +2,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class TimePeriod implements Comparable<TimePeriod> {
+public class TimePeriods implements Comparable<TimePeriods> {
 
     private long from;
     private long to;
@@ -13,7 +13,7 @@ public class TimePeriod implements Comparable<TimePeriod> {
      * @param from
      * @param to
      */
-    public TimePeriod(long from, long to) {
+    public TimePeriods(long from, long to) {
         this.from = from;
         this.to = to;
         SimpleDateFormat dayFormat = new SimpleDateFormat("yyyy.MM.dd");
@@ -22,7 +22,7 @@ public class TimePeriod implements Comparable<TimePeriod> {
         }
     }
 
-    public TimePeriod(Date from, Date to) {
+    public TimePeriods(Date from, Date to) {
         this.from = from.getTime();
         this.to = to.getTime();
         SimpleDateFormat dayFormat = new SimpleDateFormat("yyyy.MM.dd");
@@ -56,7 +56,7 @@ public class TimePeriod implements Comparable<TimePeriod> {
     }
 
     @Override
-    public int compareTo(TimePeriod period) {
+    public int compareTo(TimePeriods period) {
         SimpleDateFormat dayFormat = new SimpleDateFormat("yyyy.MM.dd");
         Date current = new Date();
         Date compared = new Date();

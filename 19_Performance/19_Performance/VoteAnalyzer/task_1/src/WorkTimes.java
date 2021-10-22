@@ -1,32 +1,32 @@
 import java.util.Date;
 import java.util.TreeSet;
 
-public class WorkTime {
+public class WorkTimes {
 
-    private TreeSet<TimePeriod> periods;
+    private TreeSet<TimePeriods> periods;
 
     /**
      * Set of TimePeriod objects
      */
-    public WorkTime() {
+    public WorkTimes() {
         periods = new TreeSet<>();
     }
 
     public void addVisitTime(long visitTime) {
         Date visit = new Date(visitTime);
-        TimePeriod newPeriod = new TimePeriod(visit, visit);
-        for (TimePeriod period : periods) {
+        TimePeriods newPeriod = new TimePeriods(visit, visit);
+        for (TimePeriods period : periods) {
             if (period.compareTo(newPeriod) == 0) {
                 period.appendTime(visit);
                 return;
             }
         }
-        periods.add(new TimePeriod(visit, visit));
+        periods.add(new TimePeriods(visit, visit));
     }
 
     public String toString() {
         String line = "";
-        for (TimePeriod period : periods) {
+        for (TimePeriods period : periods) {
             if (!line.isEmpty()) {
                 line += ", ";
             }

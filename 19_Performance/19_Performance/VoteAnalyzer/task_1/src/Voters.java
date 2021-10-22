@@ -1,19 +1,19 @@
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Voter {
+public class Voters {
 
     private String name;
     private Date birthDay;
 
-    public Voter(String name, Date birthDay) {
+    public Voters(String name, Date birthDay) {
         this.name = name;
         this.birthDay = birthDay;
     }
 
     @Override
     public boolean equals(Object obj) {
-        Voter voter = (Voter) obj;
+        Voters voter = (Voters) obj;
         return name.equals(voter.name) && birthDay.equals(voter.birthDay);
     }
 

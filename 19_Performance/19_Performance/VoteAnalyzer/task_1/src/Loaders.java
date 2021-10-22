@@ -15,13 +15,12 @@ import java.util.HashMap;
 
 public class Loaders {
 
-    private static HashMap<Integer, WorkTime> voteStationWorkTimes = new HashMap<>();
-    private static HashMap<Voter, Integer> voterCounts = new HashMap<>();
+    private static HashMap<Integer, WorkTimes> voteStationWorkTimes = new HashMap<>();
+    private static HashMap<Voters, Integer> voterCounts = new HashMap<>();
 
     public static void main(String[] args) throws Exception {
 
-        String fileName = "C:/Users/АДМИН/IdeaProjects/Git/GitLab/java_basics/19_Performance/" +
-                "19_Performance/VoteAnalyzer/res/data-0.2M.xml";
+        String fileName = "C:/Users/АДМИН/IdeaProjects/Git/GitLab/java_basics/19_Performance/19_Performance/VoteAnalyzer/res/data-0.2M.xml";
 
         // Использование DOM-парсера:
         long usage = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
@@ -32,12 +31,12 @@ public class Loaders {
         //Printing results
         System.out.println("Voting station work times: ");
         for (Integer votingStation : voteStationWorkTimes.keySet()) {
-            WorkTime workTime = voteStationWorkTimes.get(votingStation);
+            WorkTimes workTime = voteStationWorkTimes.get(votingStation);
             System.out.println("\t" + votingStation + " - " + workTime);
         }
 
         System.out.println("Duplicated voters: ");
-        for (Voter voter : voterCounts.keySet()) {
+        for (Voters voter : voterCounts.keySet()) {
             Integer count = voterCounts.get(voter);
             if (count > 1) {
                 System.out.println("\t" + voter + " - " + count);
@@ -55,7 +54,7 @@ public class Loaders {
 
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
-        XMLHandler handler = new XMLHandler();
+        XMLHandlers handler = new XMLHandlers();
         parser.parse(new File(fileName), handler);
         handler.printDuplicatedVoters();
 
@@ -86,7 +85,7 @@ public class Loaders {
             Date birthDay = birthDayFormat
                     .parse(attributes.getNamedItem("birthDay").getNodeValue());
 
-            Voter voter = new Voter(name, birthDay);
+            Voters voter = new Voters(name, birthDay);
             Integer count = voterCounts.get(voter);
             voterCounts.put(voter, count == null ? 1 : count + 1);
         }
@@ -102,9 +101,9 @@ public class Loaders {
             Integer station = Integer.parseInt(attributes.getNamedItem("station").getNodeValue());
             SimpleDateFormat visitDateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
             Date time = visitDateFormat.parse(attributes.getNamedItem("time").getNodeValue());
-            WorkTime workTime = voteStationWorkTimes.get(station);
+            WorkTimes workTime = voteStationWorkTimes.get(station);
             if (workTime == null) {
-                workTime = new WorkTime();
+                workTime = new WorkTimes();
                 voteStationWorkTimes.put(station, workTime);
             }
             workTime.addVisitTime(time.getTime());
